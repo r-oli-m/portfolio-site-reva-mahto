@@ -1,0 +1,30 @@
+/* Skills.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .skillList {
+    display: flex;
+    flex: start;
+    flex-wrap: wrap;
+    max-width: 26ch;
+    gap: 10px;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+
+    img{
+        width: 20px;
+    }
+
+  }
+  
+  .skillItem {
+    display: flex;
+  }
+  

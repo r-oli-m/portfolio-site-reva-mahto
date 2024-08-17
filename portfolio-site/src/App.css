@@ -31,6 +31,9 @@ body {
     gap: 60px; /* 60px gap min between each section */
 
 }
+.sectionTitle {
+    margin-bottom: 30px;
+  }
 
 h1,h2,h3,p{
     color: var(--text-color); /* why cant apply tis in body? */
@@ -62,7 +65,4 @@ p{
 
 .hover{
     cursor: pointer;
-}
-.hover:hover{
-    box-shadow: 0px 4px 4px rgba(226, 23, 23, 0.728);
 }

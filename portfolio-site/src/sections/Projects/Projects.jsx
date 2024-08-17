@@ -8,7 +8,7 @@ function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle"> Projects</h1>
-      <div className={styles.projectContainer}>
+      <div className={styles.projectsContainer}>
         <ProjectCard
           src={viberr}
           link="https://youtu.be/n19oWWeioOc"
@@ -19,7 +19,7 @@ function Projects() {
           src={fitlift}
           link="https://self-tour.vercel.app/"
           title="Self Tour"
-          descrip="Naviagtion Site"
+          descrip="Tourist Navigation Site"
         />
         <ProjectCard
           src={freshburger}
