@@ -28,7 +28,7 @@ function Contact() {
                         type="text"
                         id="message"
                         name="message"
-                        placeholder='message'
+                        placeholder='Message'
                         required />
                 </div>
 

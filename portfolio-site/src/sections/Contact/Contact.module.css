@@ -9,3 +9,42 @@ form{
     flex-direction: column;
     gap: 30px;
 }
+
+textarea, input{
+    height: 50px;
+    width: 250px;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: #888 solid 1px;
+    box-sizing: border-box; /* Makes sure padding is included in width */
+    justify-self: center;
+    background-color: var(--background-color);
+    color: var(--form-text-color);
+    font-family: monospace;
+}
+
+textarea{
+    padding-top: 15px;
+    height: 250px;
+    resize: none; /* Prevents resizing of textarea */
+}
+
+::placeholder{
+    color: var(--form-text-color);
+}
+
+@media (width >= 800px) {
+    input,textarea{
+        width: 600px;
+        font-size: 20px;
+    }
+    form{
+        gap: 40px;
+
+    }
+}
+@media (width >=1400px) {
+    input, textarea{
+        width: 800px;
+    }
+}

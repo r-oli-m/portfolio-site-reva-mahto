@@ -1,61 +1,96 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
     text-align: center;
-    height: 100dvh; /* 100% of any device height, aka hero component takes up whole page */
-    min-height: 500px; /* minimum height of 500px */
+    height: 100dvh;
+    /* 100% of any device height, aka hero component takes up whole page */
+    min-height: 500px;
+    /* minimum height of 500px */
     /* problem if tilt phone to side */
 
-    .hero{
+    .hero {
         width: 200px;
         height: 200px;
-        border-radius: 50%; /* Make the image round */
-        object-fit: cover; /* Ensures the image covers the entire area, cropping if necessary */
+        border-radius: 50%;
+        /* Make the image round */
+        object-fit: cover;
+        /* Ensures the image covers the entire area, cropping if necessary */
     }
 
-    span{
+    span {
         display: flex;
         gap: 25px;
         justify-content: center;
 
-        a{
+        a {
             margin: 0;
 
-            img{
+            img {
                 width: 30px;
             }
         }
     }
-    a{
+
+    a {
         width: fit-content;
         align-self: center;
     }
 }
 
-.colorModeContainer{
+.colorModeContainer {
     position: relative;
 }
 
-.colorMode{
+.colorMode {
     position: absolute;
     right: 0;
     width: 25px;
 }
 
-.colorMode:hover{
+.colorMode:hover {
     cursor: pointer;
 }
 
-.description{
+.description {
     max-width: 24ch;
     align-self: center;
     font-family: monospace;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+}
+
+@media (width >=800px) {
+    .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .hero {
+            width: 350px;
+            height: 350px;
+            max-width: 350px;
+            max-height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (width >=1400px) {
+    .container {
+        .hero {
+            width: 400px;
+            height: 400px;
+            max-width: 400px;
+            max-height: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
 }
