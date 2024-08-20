@@ -48,11 +48,10 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          Passion for developing modern and creative React web apps for all
-          purposes.
+          Passion for Web Development, Machine Learning, and Software Engineering.
         </p>
         <a href={RevaResume} download>
-          <button className="hover">Submit</button>
+          <button className="hover">Resume</button>
         </a>
       </div>
     </section>
