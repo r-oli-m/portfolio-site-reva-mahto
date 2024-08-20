@@ -4,7 +4,7 @@ import luna from "../../assets/luna.png";
 import doroim from "../../assets/doroim.png";
 import dance from "../../assets/dance.png";
 import planner from "../../assets/planner.png";
-import selftour from "../../assets/selftour.png";
+import selftour from "../../assets/selfTour.png";
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
