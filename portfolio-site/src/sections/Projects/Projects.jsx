@@ -1,40 +1,41 @@
 import styles from "./Projects.module.css";
-import viberr from "../../assets/viberr.png";
 import ProjectCard from "../../common/ProjectCard";
-import fitlift from "../../assets/fitlift.png";
-import freshburger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
+import luna from "../../assets/luna.png";
+import doroim from "../../assets/doroim.png";
+import dance from "../../assets/dance.png";
+import planner from "../../assets/planner.png";
+import selftour from "../../assets/selftour.png";
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle"> Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
+          src={luna}
           link="https://youtu.be/n19oWWeioOc"
           title="Luna"
           descrip="Robot Cat"
         />
         <ProjectCard
-          src={fitlift}
+          src={selftour}
           link="https://self-tour.vercel.app/"
           title="Self Tour"
           descrip="Tourist Navigation Site"
         />
         <ProjectCard
-          src={freshburger}
+          src={dance}
           link="https://github.com/r-oli-m/dance_site"
           title="Dance The Night Away"
           descrip="Social Media Site"
         />
         <ProjectCard
-          src={hipsster}
+          src={doroim}
           link="https://github.com/r-oli-m/doroim"
           title="Doroim"
           descrip="Dorm Room Inventory"
         />
         <ProjectCard
-          src={viberr}
+          src={planner}
           link="https://devpost.com/software/ucsc-major-reqs-planner"
           title="UCSC 4 Year Planner"
           descrip="Academic Organizer"

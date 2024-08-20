@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 import heroImg from "../../assets/hero-img.png";
 import sunIcon from "../../assets/sun.svg";
-import CV from "../../assets/cv.pdf";
+import RevaResume from "../../assets/Reva-Mahto-Resume.pdf";
 import twitterLight from "../../assets/twitter-light.svg";
 import githubLight from "../../assets/github-light.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
@@ -34,7 +34,7 @@ function Hero() {
           <br />
           Mahto
         </h1>
-        <h2>Full-Stack Developer</h2>
+        <h2>Full Stack Developer</h2>
 
         <span>
           <a href="https://twitter.com/" target="_blank">
@@ -51,7 +51,7 @@ function Hero() {
           Passion for developing modern and creative React web apps for all
           purposes.
         </p>
-        <a href={CV} download>
+        <a href={RevaResume} download>
           <button className="hover">Submit</button>
         </a>
       </div>

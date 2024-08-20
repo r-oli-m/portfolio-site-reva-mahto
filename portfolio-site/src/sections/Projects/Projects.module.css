@@ -9,6 +9,7 @@
         background-color: var(--project-card-bg);
         border-radius: 20px;
         margin-bottom: 20px;
+        border: 1px solid #dedddd;
     }
 
     a {
