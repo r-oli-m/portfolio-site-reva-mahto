@@ -36,6 +36,7 @@
         width: fit-content;
         align-self: center;
     }
+
     a:hover {
         transform: scale(1.05);
     }
@@ -61,12 +62,34 @@
     align-self: center;
 }
 
+
 .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
+.meContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center; 
+}
+li {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center; /* Center items vertically */
+}
+
 
 @media (width >=800px) {
     .container {

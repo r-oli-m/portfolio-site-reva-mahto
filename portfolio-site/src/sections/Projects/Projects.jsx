@@ -5,6 +5,7 @@ import doroim from "../../assets/doroim.png";
 import dance from "../../assets/dance.png";
 import planner from "../../assets/planner.png";
 import selftour from "../../assets/selfTour.png";
+import gwc from "../../assets/gwc.png"
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
@@ -39,6 +40,12 @@ function Projects() {
           link="https://devpost.com/software/ucsc-major-reqs-planner"
           title="UCSC 4 Year Planner"
           descrip="Academic Organizer"
+        />
+        <ProjectCard
+          src={gwc}
+          link="https://github.com/MadelineMiller/ucsc-gwc-webapp"
+          title="UCSC GWC Website"
+          descrip="Community Hub"
         />
         
       </div>

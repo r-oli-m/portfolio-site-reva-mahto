@@ -35,13 +35,13 @@ body {
     margin-bottom: 30px;
   }
 
-h1,h2,h3,p{
+h1,h2,h3,p,ul{
     color: var(--text-color); /* why cant apply tis in body? */
     margin: 0;
     padding: 0; /* remove defaults so we can specify later */
 }
 
-h2,h3,p{
+h2,h3,p,ul{
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -59,6 +59,10 @@ p{
     font-size: 16px;
     font-weight: 300;
 }
+ul{
+    font-size: 15px;
+    font-weight: 300;
+}   
 .section-tile{
     margin-bottom: 30px;
 }
