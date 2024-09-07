@@ -8,10 +8,9 @@ form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 23px;
 }
 p{
-    font-size: 16px;
+    margin-bottom: 50px;
 }
 textarea, input{
     height: 50px;

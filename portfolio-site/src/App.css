@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 60px; /* 60px gap min between each section */
+    margin-top: 60px;
 
 }
 .sectionTitle {
