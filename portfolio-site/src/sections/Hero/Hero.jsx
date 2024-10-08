@@ -15,10 +15,10 @@ import { AiOutlineSpotify } from "react-icons/ai";
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === "light" ? sunIcon : moonIcon;
-  const spotifyColor = theme === "light" ? "#000000" : "#ffffff";
-  const githubIcon = theme === "light" ? githubLight : githubDark;
-  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
+  const themeIcon = theme === "dark" ? moonIcon : sunIcon;
+  const spotifyColor = theme === "dark" ? "#ffffff" : "#000000";
+  const githubIcon = theme === "dark" ? githubDark : githubLight;
+  const linkedinIcon = theme === "dark" ? linkedinDark : linkedinLight;
 
   return (
     <section id="hero" className={styles.container}>

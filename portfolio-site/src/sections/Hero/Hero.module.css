@@ -104,6 +104,7 @@ li {
             max-height: 350px;
             border-radius: 50%;
             object-fit: cover;
+            border: 1px solid #1d283c;
         }
     }
 }
