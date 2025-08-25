@@ -6,6 +6,11 @@ import dance from "../../assets/dance.png";
 import planner from "../../assets/planner.png";
 import selftour from "../../assets/selfTour.png";
 import gwc from "../../assets/gwc.png"
+import book_recomender from "../../assets/book_recomender.png"
+import rideshare from "../../assets/rideshare.png"
+import flu_forecasting from "../../assets/flu_forecasting.png"
+
+
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
@@ -47,6 +52,24 @@ function Projects() {
           title="UCSC GWC Website"
           descrip="Community Hub"
         />
+        <ProjectCard
+          src={book_recomender}
+          link="https://github.com/MadelineMiller/nlp-book-recommendations?tab=readme-ov-file"
+          title="NLP Book Reccomender"
+          descrip="From user preferences"
+          />
+        <ProjectCard
+          src={rideshare}
+          link="https://github.com/siddhantmadhur/rideshare/blob/main/release_docs/USER_GUIDE.md"
+          title="Rideshare"
+          descrip="Student Carpooling App"
+          />
+        <ProjectCard
+          src={flu_forecasting}
+          link="https://github.com/zainamushtaq/Google_1C"
+          title="Flu Forecasting"
+          descrip="Using Google Search trends"
+          />
         
       </div>
     </section>

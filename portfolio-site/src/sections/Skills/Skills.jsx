@@ -4,18 +4,21 @@ import checkMarkDark from "../../assets/checkmark-dark.svg";
 import { useTheme } from "../../common/ThemeContext";
 
 const skillsList = [
-  ["Python", "SQL", "R", "Java", "C++", "C", "MATLAB", "Swift"],
   [
-    "React",
-    "NumPy",
-    "Pandas",
-    "Matplotlib",
-    "scikit-learn",
-    "ggplot2",
-    "Seaborn",
+    "Python", "SQL", "R", "Java", "C++", "C", "MATLAB", "Swift", 
+    "JavaScript", "Golang", "Docker", "Flask", "Linux"
   ],
-  ["Firebase", "MongoDB", "Google Cloud"],
-  ["Git", "VSCode", "JupyterLab", "Eclipse", "Terminal", "XCode", "Tableau"],
+  [
+    "React", "React Native", "NumPy", "Pandas", 
+    "Matplotlib", "scikit-learn", "ggplot2", "Seaborn", "Haskell"
+  ],
+  [
+    "Firebase", "MongoDB", "Google Cloud"
+  ],
+  [
+    "Git", "Linux", "XCode", "VSCode", "Google Colab", "JupyterLab", 
+    "Eclipse", "Tableau"
+  ],
 ];
 function Skills() {
   const { theme, toggleTheme } = useTheme();
