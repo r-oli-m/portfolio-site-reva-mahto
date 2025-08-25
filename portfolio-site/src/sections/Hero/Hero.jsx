@@ -9,25 +9,38 @@ import { useTheme } from "../../common/ThemeContext";
 import moonIcon from "../../assets/moon.svg";
 import { FaSpotify } from "react-icons/fa";
 import { AiOutlineSpotify } from "react-icons/ai";
-
+import heroImgDark from "../../assets/hero-img-dark.png";
+import { useState } from "react";
 
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const themeIcon = theme === "dark" ? moonIcon : sunIcon;
   const spotifyColor = theme === "dark" ? "#ffffff" : "#000000";
   const githubIcon = theme === "dark" ? githubDark : githubLight;
   const linkedinIcon = theme === "dark" ? linkedinDark : linkedinLight;
+  const heroImage = theme === "dark" ? heroImgDark : heroImg;
+  const handleThemeToggle = () => {
+    setIsTransitioning(true); // Start the transition
+    setTimeout(() => {
+      toggleTheme(); // Toggle the theme after a short delay
+      setIsTransitioning(false); // End the transition
+    }, 500); // Match the transition duration in CSS
+  };
 
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
-        <img className={styles.hero} src={heroImg} alt="Reva Profile Pic" />
-        <img src={themeIcon}
+        <img
+          className={`${styles.hero} ${isTransitioning ? styles.hidden : ""}`}
+          src={heroImage}
+          alt="Reva Profile Pic"
+        /><img src={themeIcon}
           alt="Theme mode icon"
           className={styles.colorMode}
-          onClick={toggleTheme} />
+          onClick={handleThemeToggle} />
       </div>
       <div className={styles.info}>
         <h1>
